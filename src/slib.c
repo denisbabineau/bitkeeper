@@ -3315,7 +3315,7 @@ checkTags(sccs *s, u32 flags)
 			tagassert(!(FLAGS(s, d) & D_META));
 			/* csetprune --tag-csets can make merge */
 			if (!MTAG(s, d) && PTAG(s, d)) {
-				tagassert(SYMBOLS(s, d));
+				//tagassert(SYMBOLS(s, d));
 				tagassert(SYMGRAPH(s, d));
 			}
 		}
